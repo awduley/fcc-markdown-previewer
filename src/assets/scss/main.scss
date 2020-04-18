@@ -1,0 +1,64 @@
+@import 'config';
+
+$primary-color: #7851a9;
+$primary-color-light: lighten(#7851a9, 16);
+$primary-color-dark: darken(#7851a9, 16);
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background: $primary-color;
+  padding: 1rem;
+}
+
+#markdown {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin-bottom: 2rem;
+}
+
+.title {
+  margin: -.3rem;
+  color: gold;
+  text-shadow: 0 4px 10px #000;
+}
+
+.top, .bottom {
+  border: 1px solid #000;
+  margin-top: 2rem;
+}
+
+.bottom {
+
+}
+
+.toolbar {
+  height: 2rem;
+  background: $primary-color-dark;
+  box-shadow: inset 0 0 10px 2px #000;
+}
+
+#editor, #preview {
+  background: $primary-color-light;
+  border: $primary-color-light;
+  width: 650px;
+  height: 300px;
+  box-shadow: 0 0 20px 2px #000;
+  padding: 1rem 1.6rem;
+  overflow: auto;
+}
+
+#preview {
+
+}
